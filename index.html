@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teclados Gamer Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #0f0f0f;
+      --accent: #0ff;
+      --card-bg: #1f1f1f;
+      --text-light: #ddd;
+      --neon-green: #00ff99;
+    }
+
+    body {
+      background-color: var(--main-bg);
+      color: var(--text-light);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #111;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .navbar-brand {
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: var(--text-light) !important;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('https://images.unsplash.com/photo-1613649321266-65f3ab5c45b7') center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: var(--neon-green);
+      text-shadow: 0 0 10px var(--neon-green);
+    }
+
+    .section-title {
+      color: var(--accent);
+      text-shadow: 0 0 5px var(--accent);
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--accent);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      color: var(--neon-green);
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      border: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: white;
+      color: black;
+    }
+
+    footer {
+      background-color: #111;
+      color: var(--accent);
+      padding: 20px 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">TecladosGamerPro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div>
+      <h1>Equipamiento Gamer Definitivo</h1>
+      <p>Teclados diseñados para dominar cada partida</p>
+    </div>
+  </div>
+
+  <!-- Productos -->
+  <section id="productos" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title mb-4">Nuestros Teclados</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado1.jpg" class="card-img-top" alt="RGB Predator">
+            <div class="card-body">
+              <h5 class="card-title">RGB Predator</h5>
+              <p class="card-text">Switches rojos, retroiluminación total y anti-ghosting.</p>
+              <p class="price">$79.99</p>
+              <a href="producto1.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado2.jpg" class="card-img-top" alt="TKL Phantom">
+            <div class="card-body">
+              <h5 class="card-title">TKL Phantom</h5>
+              <p class="card-text">Compacto, ultra sensible, con RGB y macros programables.</p>
+              <p class="price">$64.90</p>
+              <a href="producto2.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado3.jpg" class="card-img-top" alt="Wireless Beast">
+            <div class="card-body">
+              <h5 class="card-title">Wireless Beast</h5>
+              <p class="card-text">Inalámbrico, silencioso, con batería de 60h y RGB dinámico.</p>
+              <p class="price">$99.00</p>
+              <a href="producto3.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado4.jpg" class="card-img-top" alt="X-Treme Mech">
+            <div class="card-body">
+              <h5 class="card-title">X-Treme Mech</h5>
+              <p class="card-text">Teclado mecánico con switches azules y estructura de aluminio.</p>
+              <p class="price">$85.50</p>
+              <a href="producto4.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado5.jpg" class="card-img-top" alt="Stealth Pro">
+            <div class="card-body">
+              <h5 class="card-title">Stealth Pro</h5>
+              <p class="card-text">Diseño minimalista, silencioso y retroiluminado.</p>
+              <p class="price">$72.99</p>
+              <a href="producto5.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado6.jpg" class="card-img-top" alt="RapidFire RGB">
+            <div class="card-body">
+              <h5 class="card-title">RapidFire RGB</h5>
+              <p class="card-text">Switches de respuesta ultra rápida y efectos de luz dinámica.</p>
+              <p class="price">$88.88</p>
+              <a href="producto6.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado7.jpg" class="card-img-top" alt="Shadow Strike">
+            <div class="card-body">
+              <h5 class="card-title">Shadow Strike</h5>
+              <p class="card-text">Diseño agresivo, anti-salpicaduras y resistente.</p>
+              <p class="price">$69.99</p>
+              <a href="producto7.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado8.jpg" class="card-img-top" alt="Elite Core">
+            <div class="card-body">
+              <h5 class="card-title">Elite Core</h5>
+              <p class="card-text">Gama alta, con pantalla OLED y teclas macro programables.</p>
+              <p class="price">$120.00</p>
+              <a href="producto8.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-white">
+            <img src="img/teclado9.jpg" class="card-img-top" alt="Vortex RGB Mini">
+            <div class="card-body">
+              <h5 class="card-title">Vortex RGB Mini</h5>
+              <p class="card-text">Teclado 60%, ultra compacto, ideal para llevar.</p>
+              <p class="price">$54.99</p>
+              <a href="producto9.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca -->
+  <section id="acerca" class="py-5 text-center">
+    <div class="container">
+      <h2 class="section-title mb-3">¿Quiénes Somos?</h2>
+      <p>Somos apasionados del gaming y especialistas en teclados de alto rendimiento. Nuestros productos están diseñados para brindar precisión, velocidad y estilo.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title mb-4">Contáctanos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 TecladosGamerPro. Todos los derechos reservados. Kinal</p>
+    <p>Contacto <a href="#">acamposeco-2024018@kinal.edu.gt</a>, <a href="#">IG: TecladosGamerProGT</a>, <a href="#">:)</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
